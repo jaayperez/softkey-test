@@ -435,6 +435,9 @@ h4 {
 }
 
 @media (max-width: 480px) {
+  #home {
+    height: 68rem;
+  }
   html {
     font-size: 62.5%;
   }
