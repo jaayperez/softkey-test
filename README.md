@@ -1,6 +1,6 @@
-# node-js-getting-started
+# KeySoft
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
+A secure, random password generator app using Node.js and [Express 4](http://expressjs.com/).
 
 This application supports the [Getting Started on Heroku with Node.js](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
 
