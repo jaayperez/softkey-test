@@ -9,10 +9,7 @@
       App.HomeOpacity();
       App.ScrollBack();
       App.Preloader();
-      // App.Animations();
       App.Scale_video();
-      // App.iosdetect();
-      // App.androiddetect();
     },
 
 
@@ -65,30 +62,6 @@
     },
 
 
-    // /**
-    //  * Animations
-    //  */
-    // Animations: function() {
-    //   $('#about').waypoint(function() {
-    //     setTimeout(function() {
-    //       $('#about_intro').addClass('animated fadeInDown')
-    //     }, 0);
-    //     setTimeout(function() {
-    //       $('#service_1').addClass('animated fadeInDown')
-    //     }, 300);
-    //     setTimeout(function() {
-    //       $('#service_2').addClass('animated fadeInDown')
-    //     }, 500);
-    //     setTimeout(function() {
-    //       $('#service_3').addClass('animated fadeInDown')
-    //     }, 700);
-    //   }, {
-    //     offset: '50%'
-    //   });
-    //
-    // },
-
-
     /**
      * Video background scaling
      */
@@ -135,61 +108,6 @@
       };
 
     },
-
-
-
-    // /**
-    //  * iosdetect
-    //  */
-    // iosdetect: function() {
-    //   var deviceAgent = navigator.userAgent.toLowerCase();
-    //   $iOS = deviceAgent.match(/(iphone|ipod|ipad)/);
-    //
-    //   if ($iOS) {
-    //
-    //     $('#video-container').css({
-    //       'display': 'none'
-    //     });
-    //     $('#video-fallback').css({
-    //       'display': 'block'
-    //     });
-    //
-    //
-    //     // use fancy CSS3 for hardware acceleration
-    //   } else {
-    //
-    //
-    //     // use standard things like jQuery.animate
-    //   }
-    // },
-    //
-    //
-    //
-    // /**
-    //  * androiddetect
-    //  */
-    // androiddetect: function() {
-    //   var ua = navigator.userAgent.toLowerCase();
-    //   var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
-    //
-    //   if (isAndroid) {
-    //
-    //     $('#video-container').css({
-    //       'display': 'none'
-    //     });
-    //     $('#video-fallback').css({
-    //       'display': 'block'
-    //     });
-    //
-    //
-    //     // use fancy CSS3 for hardware acceleration
-    //   } else {
-    //
-    //
-    //     // use standard things like jQuery.animate
-    //   }
-    // },
-
 
   }
 

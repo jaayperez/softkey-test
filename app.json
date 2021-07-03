@@ -1,6 +1,6 @@
 {
   "name": "KeySoft - Password Generator",
-  "description": "keysoft is a Node.js password generator app using Express 4",
+  "description": "KeySoft is a Node.js password generator app using Express 4",
   "repository": "https://github.com/jaayperez/keysoft-test",
   "logo": "https://cdn.rawgit.com/jaayperez/keysoft-test/main/public/node.svg",
   "keywords": ["node", "express", "heroku"],
