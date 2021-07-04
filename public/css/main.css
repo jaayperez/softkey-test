@@ -112,8 +112,8 @@ hr {
   font-weight: 700;
   font-style: normal;
   padding-top: 1rem;
-  padding-bottom: 1.1rem;
-  width: 9.375rem;
+  padding-bottom: 1rem;
+  /* width: 9.375rem; */
   line-height: 1rem;
   text-decoration: none;
   text-align: center;
@@ -370,10 +370,6 @@ body {
   background-color: #fff;
 }
 
-.cta1 {
-  background-color: black;
-}
-
 .subscribe-submit,
 .subscribe-submit:active,
 .spinner>div,
@@ -435,6 +431,11 @@ h4 {
 }
 
 @media (max-width: 480px) {
+  .cta2 {
+    font-size: 1.5rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
   #video_pattern {
     height: 93%;
   }
@@ -451,6 +452,7 @@ h4 {
 
   h1 {
     font-size: 3rem;
+    font-weight: 700;
   }
 
   #logo_header {
