@@ -5,7 +5,7 @@
       <div id="homescreen" class="mx-auto col-12">
         <div id="logo">
           <a href="#home">
-            <img src="/images/logos/logo.png" alt="Keysoft logo">
+            <img src="/images/logo.png" alt="Keysoft logo">
           </a>
         </div>
         <div id="logo_header">
@@ -16,10 +16,10 @@
         </div>
         <div class="copy-text col-sm-12 col-md-6 mx-auto mt-3 mb-3 text-center">
           <label for="p9"></label>
-          <input class="generate-input text" value="Your new password.." type='text' id='p9' />
+          <input class="generate-input text" value="Your new password" type='text' id='p9' />
           <button><i class="fa fa-clone"></i></button>
         </div>
-      <input type="button" value="Copy Password" class="cta2 btn draw-border" id="copy" onclick="copyText();">
+        <input type="button" value="Copy Password" class="cta2 btn draw-border" id="copy" onclick="copyText();">
 
         <form id="passwordGeneratorForm" class="form text-center d-inline-block">
           <div>
@@ -55,9 +55,4 @@
       copyText.classList.remove("active");
     }, 2500);
   });
-
-  // function copyText() {
-  //   document.getElementById("p9").select();
-  //   document.execCommand('copy');
-  // }
 </script>

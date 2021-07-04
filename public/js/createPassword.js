@@ -1,4 +1,4 @@
-// Password generated with at least 1 number, 1 upper case character, 1 lower case character and 1 Special character
+// Password generated with at least 1 number, 1 upper case character, 1 lower case character and 1 special character
 function generatePassword() {
   var passwordLength = randomIntFromInterval(10, 20);
   var numberChars = "0123456789";

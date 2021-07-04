@@ -1,7 +1,7 @@
 {
   "name": "keysoft-test",
   "version": "1.0.0",
-  "description": "KeySoft is a secure, random password generator app using Node.js and Express 4.",
+  "description": "Secure, random password generator app using Node.js and Express 4.",
   "engines": {
     "node": "14.x"
   },
