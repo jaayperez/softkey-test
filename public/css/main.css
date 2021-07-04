@@ -487,8 +487,8 @@ h4 {
 }
 .copy-text button {
   padding: 10px;
-  background: #a7cb00;
-  color: #fff;
+  background: #fff;
+  /* color: #fff; */
   font-size: 18px;
   border: none;
   outline: none;
@@ -497,7 +497,7 @@ h4 {
 }
 
 .copy-text button:active {
-  background: #809ce2;
+  background: #a7cb00;
 }
 .copy-text button:before {
   content: "Copied";
@@ -524,5 +524,6 @@ h4 {
 }
 .copy-text.active button:before,
 .copy-text.active button:after {
+  color: #fff;
   display: block;
 }
