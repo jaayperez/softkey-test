@@ -117,10 +117,12 @@ hr {
   line-height: 1rem;
   text-decoration: none;
   text-align: center;
+  height: 3.25rem;
+  margin: 0 0 4px 0;
   /* margin-left: 0.625rem;
   margin-right: 0.625rem; */
-  margin-top: 1.4rem;
-  letter-spacing: -0.03rem;
+  /* margin-top: 1.4rem; */
+  /* letter-spacing: -0.03rem; */
   -webkit-border-top-left-radius: 7px;
   -moz-border-radius-topleft: 7px;
   border-top-left-radius: 7px;
@@ -326,8 +328,9 @@ hr {
 .generate-input {
   padding-left: 1.2rem;
   padding-top: 0.1rem;
-  width: 21.875rem;
-  height: 3.25rem;
+  width: -webkit-fill-available;
+  /* width: 21.875rem; */
+  /* height: 3.25rem; */
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1rem;
   font-weight: 300;
@@ -433,7 +436,8 @@ h4 {
 @media (max-width: 480px) {
   .cta2 {
     font-size: 1.5rem;
-    padding: 1.5rem;
+    padding: 1rem;
+    margin: 0 0 2px 0;
   }
   #video_pattern {
     height: 93%;
@@ -461,4 +465,64 @@ h4 {
   #counter_box {
     margin-bottom: 2em;
   }
+}
+
+/* ###################################### */
+/* Copy clipboard */
+/* ###################################### */
+.copy-text {
+  position: relative;
+  padding: 10px;
+  background: #fff;
+  /* border: 1px solid #ddd; */
+  border-radius: 10px;
+  display: flex;
+}
+.copy-text input.text {
+  padding: 10px;
+  font-size: 18px;
+  color: #555;
+  border: none;
+  outline: none;
+}
+.copy-text button {
+  padding: 10px;
+  background: #a7cb00;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.copy-text button:active {
+  background: #809ce2;
+}
+.copy-text button:before {
+  content: "Copied";
+  position: absolute;
+  top: -45px;
+  right: 0px;
+  background: #a7cb00;
+  padding: 8px 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  display: none;
+}
+.copy-text button:after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: 25px;
+  width: 10px;
+  height: 10px;
+  background: #a7cb00;
+  /* background: #5c81dc; */
+  transform: rotate(45deg);
+  display: none;
+}
+.copy-text.active button:before,
+.copy-text.active button:after {
+  display: block;
 }

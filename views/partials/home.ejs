@@ -5,7 +5,7 @@
       <div id="homescreen" class="mx-auto col-12">
         <div id="logo">
           <a href="#home">
-            <img src="/images/logos/logo.png" alt="logo">
+            <img src="/images/logos/logo.png" alt="Keysoft logo">
           </a>
         </div>
         <div id="logo_header">
@@ -14,11 +14,24 @@
         <div class="m-4 p-3" id="slogan">
           <h1>Use our online password generator to instantly create a secure, random password.</h1>
         </div>
-        <div class="col-12 mt-3 mb-3 text-center">
+        <div class="copy-text col-sm-12 col-md-6 mx-auto mt-3 mb-3 text-center">
+
+
           <label for="p9"></label>
-          <input class="generate-input" type='text' id='p9' />
+
+
+          <input class="generate-input text" value="Your new password.." type='text' id='p9' />
+
+          <button><i class="fa fa-clone"></i></button>
+
+
+
+
         </div>
-        <form id="passwordGeneratorForm" class="form text-center">
+
+        <input type="button" value="Copy Password" class="cta2 btn draw-border" id="copy" onclick="copyText();">
+
+        <form id="passwordGeneratorForm" class="form text-center d-inline-block">
           <div>
             <input class="mx-auto cta2 btn draw-border" type='button' value='Generate Now' onclick='document.getElementById("p9").value = generatePassword()'>
           </div>
@@ -38,3 +51,24 @@
   </div>
   <!-- end video-container -->
 </section>
+
+
+<script type="text/javascript">
+
+  let copyText = document.querySelector(".copy-text");
+copyText.querySelector("button").addEventListener("click", function () {
+	let input = copyText.querySelector("input.text");
+	input.select();
+	document.execCommand("copy");
+	copyText.classList.add("active");
+	window.getSelection().removeAllRanges();
+	setTimeout(function () {
+		copyText.classList.remove("active");
+	}, 2500);
+});
+
+  // function copyText() {
+  //   document.getElementById("p9").select();
+  //   document.execCommand('copy');
+  // }
+</script>
